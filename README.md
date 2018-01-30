@@ -26,6 +26,10 @@ The management interface on the virtual switch has been configured with the IP a
 
 From the packet capture, the binary payload was extracted and saved on the `src/test/resources` directory.
 
+The Java code required to parse the GPB data was generated using the `.proto` file available at:
+
+https://github.com/CiscoDevNet/nx-telemetry-proto
+
 On both cases, the first 6 bytes should be removed from the payload prior parsing; otherwise an error is obtained.
 
 It is required to know the purpose and the content of these 6 bytes.
